@@ -1,6 +1,10 @@
-// #include <cpprest/json.h>
+#include <pprint.hpp>
 
 int main()
 {
-    // const auto parsed_value = web::json::value::parse(U("-22"));
+    std::stringstream stream;
+    pprint::PrettyPrinter printer(stream);
+    printer.print(3.14f);
+    return stream.str() == "3.14f" ? 0 : 1;
+    `
 }
