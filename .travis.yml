@@ -1,3 +1,12 @@
+env:
+   global:
+     - CONAN_USERNAME: "wrayste"
+     - CONAN_LOGIN_USERNAME: "wrayste"
+     - CONAN_CHANNEL: "public-conan"
+     - CONAN_UPLOAD: "https://api.bintray.com/wrayste/public-conan/"
+     - CONAN_STABLE_BRANCH_PATTERN: "stable/*"
+     - CONAN_UPLOAD_ONLY_WHEN_STABLE: 0
+
 linux: &linux
    os: linux
    dist: xenial
